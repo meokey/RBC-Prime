@@ -1,0 +1,21 @@
+{
+	"name": "RBC-Prime",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "Actor to extract RBC Royal Bank Prime Rate and date of change",
+	"dependencies": {
+		"apify": "^3.2.6",
+		"crawlee": "^3.11.5",
+		"puppeteer": "*"
+	},
+	"devDependencies": {
+		"@apify/eslint-config": "^0.4.0",
+		"eslint": "^8.50.0"
+	},
+	"scripts": {
+		"start": "node src/main.js",
+		"test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+	},
+	"author": "Bill Chen",
+	"license": "ISC"
+}
