@@ -56,6 +56,8 @@ router.addDefaultHandler(async ({ request, page, enqueueLinks, log }) => {
 	// await dataset.pushData(result);
         // log.info(`Data saved in dataset RBC_PRIME successfully: ${result}`);
 	//// console.log('Data saved in dataset RBC_PRIME successfully.');
+
+	return result;
 });
 
 // Gracefully exit the Actor process. It's recommended to quit all Actors with an exit().
