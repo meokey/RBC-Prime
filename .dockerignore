@@ -1,5 +1,9 @@
 # configurations
 .idea
+.DS_Store
+.editorconfig
+*.example
+*.bak
 
 # crawlee and apify storage folders
 apify_storage
