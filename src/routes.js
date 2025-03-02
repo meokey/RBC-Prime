@@ -46,6 +46,9 @@ router.addDefaultHandler(async ({ request, page, enqueueLinks, log }) => {
 	log.info(`RBC Prime Rate retrieved successfully: ${result}`);
 	//console.log(result);
 
+	// To make the data easily accessible for API calls, push the result to default Dataset
+        await Actor.pushData(result);
+	log.info(`Data pushed to the default dataset successfully.`);
         // Save data to named key-value store
 	const store = await Actor.openKeyValueStore('RBC');
 	await store.setValue('PRIME-RATES',result);
@@ -56,6 +59,8 @@ router.addDefaultHandler(async ({ request, page, enqueueLinks, log }) => {
 	// await dataset.pushData(result);
         // log.info(`Data saved in dataset RBC_PRIME successfully: ${result}`);
 	//// console.log('Data saved in dataset RBC_PRIME successfully.');
+	return result;
+
 });
 
 // Gracefully exit the Actor process. It's recommended to quit all Actors with an exit().

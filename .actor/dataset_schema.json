@@ -1,0 +1,58 @@
+{
+    "actorSpecification": 1,
+    "title": "RBC Rates",
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "Royal_Bank_Prime.Rate",
+                    "Royal_Bank_Prime.DateofChange",
+                    "RBC_CAD_Deposit_Reference_Rate.Rate",
+                    "RBC_CAD_Deposit_Reference_Rate.DateofChange",
+                    "Royal_Bank_US_Prime.Rate",
+                    "Royal_Bank_US_Prime.DateofChange",
+                    "Royal_Bank_US_BASE.Rate",
+                    "Royal_Bank_US_BASE.DateofChange",
+                    "lastUpdated",
+                    "source"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "Royal_Bank_Prime.Rate": {
+                        "label": "RBC Prime Rate"
+                    },
+                    "Royal_Bank_Prime.DateofChange": {
+                        "label": "RBC Prime Change Date"
+                    },
+                    "RBC_CAD_Deposit_Reference_Rate.Rate": {
+                        "label": "CAD Deposit Rate"
+                    },
+                    "RBC_CAD_Deposit_Reference_Rate.DateofChange": {
+                        "label": "CAD Deposit Change Date"
+                    },
+                    "Royal_Bank_US_Prime.Rate": {
+                        "label": "US Prime Rate"
+                    },
+                    "Royal_Bank_US_Prime.DateofChange": {
+                        "label": "US Prime Change Date"
+                    },
+                    "Royal_Bank_US_BASE.Rate": {
+                        "label": "US BASE Rate"
+                    },
+                    "Royal_Bank_US_BASE.DateofChange": {
+                        "label": "US BASE Change Date"
+                    },
+                    "lastUpdated": {
+                        "label": "Last Updated"
+                    },
+                    "source": {
+                        "label": "Source URL"
+                    }
+                }
+            }
+        }
+    }
+}

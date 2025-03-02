@@ -10,7 +10,7 @@
             "editor": "requestListSources",
             "prefill": [
                 {
-                    "url": "https://apify.com"
+                    "url": "https://www.rbcroyalbank.com/rates/prime.html"
                 }
             ]
         }
