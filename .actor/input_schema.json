@@ -1,18 +1,6 @@
 {
-    "title": "PuppeteerCrawler Template",
+    "title": "RBC Prime Rates Crawler",
     "type": "object",
     "schemaVersion": 1,
-    "properties": {
-        "startUrls": {
-            "title": "Start URLs",
-            "type": "array",
-            "description": "URLs to start with.",
-            "editor": "requestListSources",
-            "prefill": [
-                {
-                    "url": "https://www.rbcroyalbank.com/rates/prime.html"
-                }
-            ]
-        }
-    }
+    "properties": {}
 }
